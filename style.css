@@ -10,13 +10,14 @@ body {
     margin-left: 20px;
 }
 
-a{
+a {
     color: blue;
 }
 
-a:active{
+a:active {
     color: red;
 }
+
 #disclaimerBox {
     position: fixed;
     bottom: 0;
@@ -29,7 +30,6 @@ a:active{
     justify-content: center;
     padding: 10px;
     box-sizing: border-box;
-    /* Include padding in the height calculation */
 }
 
 #disclaimerText {
@@ -39,7 +39,6 @@ a:active{
     text-align: center;
     padding: 0 10px;
     white-space: normal;
-    /* Allow text wrapping */
     overflow: hidden;
 }
 
@@ -51,11 +50,18 @@ a:active{
 @media (prefers-color-scheme: dark) {
     .headings {
         color: pink;
-        /* Color for dark mode */
     }
 
-    a:active{
+    a:active {
         color: white;
+    }
+
+    #box {
+        border: 1px solid white !important;
+    }
+
+    .valueBox {
+        border: 1px solid white !important;
     }
 }
 
