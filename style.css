@@ -10,6 +10,13 @@ body {
     margin-left: 20px;
 }
 
+a{
+    color: blue;
+}
+
+a:active{
+    color: red;
+}
 #disclaimerBox {
     position: fixed;
     bottom: 0;
@@ -39,6 +46,17 @@ body {
 .headings {
     color: blue;
     font-size: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .headings {
+        color: pink;
+        /* Color for dark mode */
+    }
+
+    a:active{
+        color: white;
+    }
 }
 
 #box {
