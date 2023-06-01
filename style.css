@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+
+#disclaimerBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Include padding in the height calculation */
+}
+
+#disclaimerText {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    text-align: center;
+    padding: 0 10px;
+    white-space: normal;
+    /* Allow text wrapping */
+    overflow: hidden;
+}
+
+.headings {
+    color: blue;
+    font-size: 18px;
+}
+
+#box {
+    border: 1px solid black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    min-width: 100px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#box p {
+    margin: 0;
+}
+
+#checkboxContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#checkboxContainer label {
+    margin-right: 1px;
+}
+
+#lenSliderContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.valueBox {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
