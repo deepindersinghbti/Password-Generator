@@ -3,6 +3,7 @@
 #container{
     /* Fix so that the disclaimerBox does not overlap web page contents */
     padding-bottom: 60px;
+    overflow-y: auto;
 }
 h1 {
     font-family: 'Poppins', sans-serif;
