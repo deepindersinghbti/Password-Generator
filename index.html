@@ -11,49 +11,56 @@
 </head>
 
 <body>
-    <h1>Password Generator</h1>
+    <div id="container">
+        <h1>Password Generator</h1>
 
-    <!-- Password length slider -->
-    <p class="headings">Password length (1 - 50): </p>
-    <div id="lenSliderContainer">
-        <input type="range" id="lenRange" value="1" min="1" max="50" oninput="updateSliderValue()">
-        <div id="lenRangeVal" class="valueBox">0</div>
-    </div>
+        <!-- Password length slider -->
+        <p class="headings">Password length (1 - 50): </p>
+        <div id="lenSliderContainer">
+            <input type="range" id="lenRange" value="1" min="1" max="50" oninput="updateSliderValue()">
+            <div id="lenRangeVal" class="valueBox">0</div>
+        </div>
 
-    <!-- Password contents selector -->
-    <p class="headings">Select what to include:</p>
-    <div id="checkboxContainer">
-        <label for="lowerCaseBox">Lower case characters</label>
-        <input type="checkbox" id="lowerCaseBox"><br>
+        <!-- Password contents selector -->
+        <p class="headings">Select what to include:</p>
+        <div id="checkboxContainer">
+            <label for="lowerCaseBox">Lower case characters</label>
+            <input type="checkbox" id="lowerCaseBox"><br>
 
-        <label for="upperCaseBox">Upper case characters</label>
-        <input type="checkbox" id="upperCaseBox"><br>
+            <label for="upperCaseBox">Upper case characters</label>
+            <input type="checkbox" id="upperCaseBox"><br>
 
-        <label for="numBox">Numbers</label>
-        <input type="checkbox" id="numBox"><br>
+            <label for="numBox">Numbers</label>
+            <input type="checkbox" id="numBox"><br>
 
-        <label for="specialCharBox">Special Characters</label>
-        <input type="checkbox" id="specialCharBox"><br>
-    </div>
-    <br>
+            <label for="specialCharBox">Special Characters</label>
+            <input type="checkbox" id="specialCharBox"><br>
+        </div>
+        <br>
 
-    <!-- Generate button -->
-    <button id="generateBt">Generate Password</button>
-    <br><br>
+        <!-- Generate button -->
+        <button id="generateBt">Generate Password</button>
+        <br><br>
 
-    <!-- Password output -->
-    <p class="headings">Your Generated Password: </p>
-    <p id="passwordOutput"></p>
-    <div id="box"></div>
-    <br>
+        <!-- Password output -->
+        <p class="headings">Your Generated Password: </p>
+        <p id="passwordOutput"></p>
+        <div id="box"></div>
+        <br>
 
-    <!-- Copy button -->
-    <button id="copyBt" onclick="copyPass();">Copy Password</button>
+        <!-- Copy button -->
+        <button id="copyBt" onclick="copyPass();">Copy Password</button>
 
-    <!-- Disclaimer -->
-    <div id="disclaimerBox">
-        <p id="disclaimerText">Disclaimer: This is an open-source project built by the developer for practice purpose only. This website does not store/sell the passwords you generate in any form. It is always recommended to take security measures like creating strong passwords and using multi-factor authentication. Remember, no password is hacker-proof. Password generator or its developer not be responsible for the loss of any data or password. Source code can be found <a href="https://github.com/deepindersinghbti/Password-Generator/">here</a>".
-        </p>
+        <!-- Disclaimer -->
+        <div id="disclaimerBox">
+            <p id="disclaimerText">Disclaimer: This is an open-source project built by the developer for practice
+                purpose only. This website does not store/sell the passwords you generate in any form. It is always
+                recommended to take security measures like creating strong passwords and using multi-factor
+                authentication. Remember, no password is hacker-proof. Password generator or its developer not be
+                responsible for the loss of any data or password. Source code can be found <a
+                    href="https://github.com/deepindersinghbti/Password-Generator/">here</a>".
+            </p>
+        </div>
     </div>
 
     <script src="script.js"></script>
