@@ -5,6 +5,7 @@
     overflow-y: auto;
 }
 
+
 h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -15,7 +16,6 @@ body {
     margin-left: 20px;
 }
 
-/* Adjust checkbox styles for better visibility */
 input[type="checkbox"] {
     transform: scale(1.2);
     margin-right: 5px;
@@ -30,13 +30,13 @@ a:active {
 }
 
 #disclaimerBox {
+    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     min-height: 60px;
     background-color: aqua;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -44,6 +44,7 @@ a:active {
 }
 
 #disclaimerText {
+    /* display: none; */
     font-size: 20px;
     color: black;
     margin: 0;
@@ -51,6 +52,10 @@ a:active {
     padding: 0 10px;
     white-space: normal;
     overflow: hidden;
+}
+
+#disclaimerBox.hidden {
+    display: none;
 }
 
 .headings {

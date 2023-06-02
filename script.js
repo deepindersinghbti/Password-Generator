@@ -69,6 +69,7 @@ function generatePass() {
 const generateBtn = document.getElementById("generateBt");
 const passwordOutput = document.getElementById("passwordOutput");
 var box = document.getElementById("box");
+var pageBody = document.getElementById("container");
 
 generateBtn.addEventListener("click", function () {
     const sliderValue = lenSlider.value;
@@ -111,4 +112,9 @@ function copyPass() {
         .catch((error) => {
             console.error("Failed to copy password:", error);
         });
+}
+
+function hideDisclaimer() {
+    var disclaimerBox = document.getElementById("disclaimerBox");
+    disclaimerBox.classList.add("hidden");
 }
