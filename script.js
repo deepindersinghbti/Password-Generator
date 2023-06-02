@@ -117,4 +117,7 @@ function copyPass() {
 function hideDisclaimer() {
     var disclaimerBox = document.getElementById("disclaimerBox");
     disclaimerBox.classList.add("hidden");
+
+    var disclaimerText = document.getElementById("disclaimerText");
+    disclaimerText.classList.add("hidden");
 }

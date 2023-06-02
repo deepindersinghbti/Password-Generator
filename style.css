@@ -68,9 +68,18 @@ a:active {
     }
 }
 
+#disclaimerText.hidden {
+    /* Disable text selection */
+    user-select: none;
+}
+
 #disclaimerBox.hidden {
     /* Apply the animation of slowly disappearing */
     animation: fadeOut 1s forwards;
+}
+
+#disclaimerText.hidden a{
+    pointer-events: none;
 }
 
 .headings {
@@ -78,6 +87,7 @@ a:active {
     font-size: 18px;
 }
 
+/* Customizations for dark mode */
 @media (prefers-color-scheme: dark) {
     .headings {
         color: orange;
