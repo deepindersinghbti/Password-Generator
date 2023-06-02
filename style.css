@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 #container {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     overflow-y: auto;
 }
 
@@ -13,6 +13,7 @@ h1 {
 body {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
+    margin-bottom: 50px;
 }
 
 /* Adjust checkbox styles for better visibility */
@@ -57,6 +58,12 @@ a:active {
 .headings {
     color: blue;
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    #checkboxContainer {
+        flex-direction: column;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
