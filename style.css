@@ -57,8 +57,20 @@ a:active {
     overflow: hidden;
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
 #disclaimerBox.hidden {
-    display: none;
+    /* Apply the animation of slowly disappearing */
+    animation: fadeOut 1s forwards;
 }
 
 .headings {
