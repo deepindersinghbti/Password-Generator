@@ -15,6 +15,12 @@ body {
     margin-left: 20px;
 }
 
+/* Adjust checkbox styles for better visibility */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 5px;
+}
+
 a {
     color: blue;
 }
@@ -25,6 +31,7 @@ a:active {
 
 #disclaimerBox {
     position: fixed;
+    overflow: auto;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -44,7 +51,7 @@ a:active {
     text-align: center;
     padding: 0 10px;
     white-space: normal;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .headings {
