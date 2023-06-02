@@ -19,6 +19,9 @@ body {
 input[type="checkbox"] {
     transform: scale(1.2);
     margin-right: 5px;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
 }
 
 a {
@@ -65,7 +68,7 @@ a:active {
 
 @media (prefers-color-scheme: dark) {
     .headings {
-        color: pink;
+        color: orange;
     }
 
     a:active {
