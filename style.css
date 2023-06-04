@@ -5,7 +5,6 @@
     overflow-y: auto;
 }
 
-
 h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -48,7 +47,6 @@ a:active {
 }
 
 #disclaimerText {
-    /* display: none; */
     font-size: 20px;
     color: black;
     margin: 0;
@@ -65,21 +63,19 @@ a:active {
 
     100% {
         opacity: 0;
-        display: none;
+        visibility: hidden;
     }
 }
 
 #disclaimerText.hidden {
-    /* Disable text selection */
     user-select: none;
 }
 
 #disclaimerBox.hidden {
-    /* Apply the animation of slowly disappearing */
     animation: fadeOut 1s forwards;
 }
 
-#disclaimerText.hidden a{
+#disclaimerText.hidden a {
     pointer-events: none;
 }
 
@@ -99,16 +95,18 @@ a:active {
     }
 
     #box {
-        border: 1px solid white !important;
+        border: 1px solid white;
     }
 
     .valueBox {
-        border: 1px solid white !important;
+        border: 1px solid white;
     }
 }
 
+
+
 @media only screen and (max-width: 600px) {
-    .disclaimerBox {
+    #disclaimerBox {
         position: fixed;
         bottom: 0;
         left: 0;

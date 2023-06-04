@@ -69,7 +69,6 @@ function generatePass() {
 const generateBtn = document.getElementById("generateBt");
 const passwordOutput = document.getElementById("passwordOutput");
 var box = document.getElementById("box");
-var pageBody = document.getElementById("container");
 
 generateBtn.addEventListener("click", function () {
     const sliderValue = lenSlider.value;
