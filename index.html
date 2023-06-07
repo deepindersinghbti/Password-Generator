@@ -10,7 +10,7 @@
     <title>Password Generator</title>
 </head>
 
-<body onclick="hideDisclaimer();">
+<body class="dark-mode" onclick="hideDisclaimer();">
     <div id="container">
         <h1>Password Generator</h1>
 
@@ -18,6 +18,8 @@
         <p class="headings">Password length (1 - 50): </p>
         <div id="lenSliderContainer">
             <input type="range" id="lenRange" value="1" min="1" max="50" oninput="updateSliderValue()">
+            <button id="incBt">+</button>
+            <button id="decBt">-</button>
             <div id="lenRangeVal" class="valueBox">0</div>
         </div>
 

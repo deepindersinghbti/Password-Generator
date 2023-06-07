@@ -8,6 +8,10 @@ const specialChar = "!@#$%^&*()-_~+=[]{}?:;,.<>`";
 const lenSlider = document.getElementById("lenRange");
 const lenRangeVal = document.getElementById("lenRangeVal");
 
+//Fetch the increase and decrease buttons
+const incBtn = document.getElementById("incBt");
+const decBtn = document.getElementById("decBt");
+
 // Set the initial value and update the displayed value
 lenRangeVal.textContent = lenSlider.value;
 
@@ -69,6 +73,16 @@ function generatePass() {
 const generateBtn = document.getElementById("generateBt");
 const passwordOutput = document.getElementById("passwordOutput");
 var box = document.getElementById("box");
+
+incBtn.addEventListener("click", function () {
+    lenSlider.value = parseInt(lenSlider.value) + 1;
+    updateSliderValue();
+});
+
+decBtn.addEventListener("click", function () {
+    lenSlider.value = parseInt(lenSlider.value) - 1;
+    updateSliderValue();
+});
 
 generateBtn.addEventListener("click", function () {
     const sliderValue = lenSlider.value;
